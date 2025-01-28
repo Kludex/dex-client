@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dex-client"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = ["protobuf>=5.29.1"]
+
+[project.urls]
+Homepage = "https://github.com/Kludex/dex-client"
+Funding = "https://github.com/sponsors/Kludex"
