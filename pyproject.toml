@@ -4,12 +4,15 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dex-client"
-version = "0.1.0"
+version = "0.2.0"
 description = "Add your description here"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.9"
-dependencies = ["protobuf>=5.29.1"]
+dependencies = ["betterproto>=1.2.5,<2"]
+
+[dependency-groups]
+dev = ['betterproto[compiler]', 'grpcio-tools']
 
 [project.urls]
 Homepage = "https://github.com/Kludex/dex-client"
