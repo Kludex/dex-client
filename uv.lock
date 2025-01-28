@@ -79,26 +79,22 @@ wheels = [
 
 [[package]]
 name = "dex-client"
-version = "0.1.0"
+version = "0.2.0"
 source = { editable = "." }
 dependencies = [
-    { name = "protobuf" },
+    { name = "betterproto", extra = ["compiler"] },
 ]
 
 [package.dev-dependencies]
 dev = [
-    { name = "betterproto", extra = ["compiler"] },
     { name = "grpcio-tools" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "protobuf", specifier = ">=5.29.1" }]
+requires-dist = [{ name = "betterproto", extras = ["compiler"], specifier = ">=1.2.5,<2" }]
 
 [package.metadata.requires-dev]
-dev = [
-    { name = "betterproto", extras = ["compiler"] },
-    { name = "grpcio-tools" },
-]
+dev = [{ name = "grpcio-tools" }]
 
 [[package]]
 name = "grpcio"

@@ -9,10 +9,10 @@ description = "Add your description here"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.9"
-dependencies = ["betterproto>=1.2.5,<2"]
+dependencies = ["betterproto[compiler]>=1.2.5,<2"]
 
 [dependency-groups]
-dev = ['betterproto[compiler]', 'grpcio-tools']
+dev = ['grpcio-tools']
 
 [project.urls]
 Homepage = "https://github.com/Kludex/dex-client"

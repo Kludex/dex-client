@@ -19,7 +19,7 @@ curl -L https://raw.githubusercontent.com/dexidp/dex/refs/heads/master/api/v2/ap
 To generate the client, run the following command:
 
 ```bash
-protoc -I ./ --python_out=./dex_client api.proto
+uv run -m grpc_tools.protoc -I ./ --python_betterproto_out=dex_client api.proto
 ```
 
 ## License
