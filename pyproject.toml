@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dex-client"
-version = "0.2.0"
+version = "0.3.0"
 description = "Add your description here"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.9"
-dependencies = ["betterproto[compiler]>=1.2.5,<2"]
+dependencies = ["betterproto[compiler]>=2.0.0b7"]
 
 [dependency-groups]
 dev = ['grpcio-tools']
